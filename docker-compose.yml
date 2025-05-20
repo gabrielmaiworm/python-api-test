@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  api:
+    build: .
+    container_name: pessoas-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    restart: unless-stopped
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - ENVIRONMENT=development 

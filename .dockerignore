@@ -1,0 +1,47 @@
+# Git
+.git
+.gitignore
+
+# Arquivos do Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Ambiente virtual Python
+venv/
+env/
+ENV/
+
+# Arquivos de cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+
+# Diretórios de distribuição / empacotamento
+dist/
+build/
+*.egg-info/
+
+# Arquivos de ambiente
+.env
+.env.*
+
+# IDEs e editores
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Arquivos temporários
+tmp/
+temp/
+
+# Documentação
+README.md
+routes_guide.md 

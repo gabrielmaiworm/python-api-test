@@ -6,8 +6,8 @@ from app.seed import seed_database
 
 
 app = FastAPI(
-    title="API de Pessoas",
-    description="API simples para cadastro, listagem e exclusão de pessoas",
+    title="API de Funcionários",
+    description="API para gerenciamento de funcionários de uma empresa",
     version="1.0.0"
 )
 
@@ -27,7 +27,7 @@ app.include_router(router)
 @app.get("/")
 def read_root():
     return {
-        "message": "Bem-vindo à API de Pessoas",
+        "message": "Bem-vindo à API de Funcionários",
         "docs": "/docs",
         "redoc": "/redoc"
     }
